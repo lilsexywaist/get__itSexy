@@ -3,13 +3,20 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Untitled</title>
-    
+    <title>get_itSexy</title>
+    <link rel="stylesheet" href="./style.css">
 
   </head>
     
   <body>
   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Old Facebook Profile</title>
+
+<style>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -58,8 +65,9 @@ body{
 }
 
 .facebook-header h1{
-    font-size:34px;
-    font-weight:bold;
+      flex:1;
+    min-width:0;
+  font-size:15px;
 }
 
 .search{
@@ -69,7 +77,6 @@ body{
     padding:5px 8px;
     border:1px solid #27467f;
 }
-
 .nav{
     background:#d8dfea;
     border-bottom:1px solid #b7c3d8;
@@ -86,7 +93,7 @@ body{
 .content{
     display:flex;
 }
-
+  
 /* LEFT COLUMN */
 
 .sidebar{
@@ -193,6 +200,13 @@ body{
     border:1px solid #ccc;
     margin-bottom:10px;
 }
+  
+  .post-video{
+    width:100%;
+    display:block;
+    border:1px solid #ccc;
+    margin-bottom:10px;
+}
 
 .comment{
     background:#f7f7f7;
@@ -244,6 +258,35 @@ body{
 
 .link-post:hover{
     text-decoration:underline;
+  }
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+.tab{
+    display:inline-block;
+    padding:7px 15px;
+    background:#edf3fb;
+    border:1px solid #b8c4d9;
+    border-bottom:none;
+    cursor:pointer;
+    color:#35518d;
+    font-weight:bold;
+}
+
+.tab.active{
+    background:#fff;
+}
+  .page{
+    display:none;
+}
+
+.page.active{
+    display:block;
 }
 
 </style>
@@ -299,16 +342,12 @@ Search...
 
             <p><b>Relationship:</b> Single</p>
 
-            <p><b>Others:</b>
-              <ul> Of Age (20+)</p>
-              <ul> Open for plots</p>
-              <ul>Profanities ahead</p>
+          <p><b>Others:</b></p>
+              Of Age (20+)</p>
+              Open for plots</p>
+              Profanities ahead</p>
           
-         <br>  <p><b>Disclaimer:</b> This account exists solely for roleplaying. All characters and events portrayed here are entirely fictional.</br>
-          
-
-
-
+ <br><p><b>Disclaimer:</b> This account exists solely for roleplaying. All characters and events portrayed here are entirely fictional.</br></p>
         </div>
 
     </div>
@@ -317,37 +356,29 @@ Search...
 
     <div class="wall">
 
-        <div class="tabs">
-            <div class="tab active">Profile</div>
-            <div class="tab">Information</div>
-        </div>
+    <div class="tabs">
+    <div class="tab active" id="profileTab" onclick="showTab('profile')">
+        Profile
+    </div>
 
+    <div class="tab" id="informationTab" onclick="showTab('information')">
+        Information
+    </div>
+</div>
+<div id="profile" class="page active">
         <div class="post">
 
             <div class="post-header">
-                Who is she?
+                SICA • PINNED
             </div>
-
-    <div class="post-body">
-
-       Marta Kjorésica Montemayor, known simply as <i><b>Sica</i></b>, was born into old money, raised in a grand estate in La Moraleja, Madrid, where antique clocks echoed through halls filled with priceless art, vintage cars, and generations of family history. By twelve, she spoke four languages, spent her afternoons in etiquette lessons, weekends yachting, summers in Mallorca, and winters in Gstaad.</br></p>
-
-<br><p>She preferred cigarette smoke over ballroom perfume, techno over orchestras, and nights that lasted until sunrise. While her family expected another polished socialite, Sica chased experiences instead. She knew the best clubs in Ibiza, hidden jazz bars in Paris, and cafés in Milan where midnight still felt like morning.</br></p>
-
-<br><p>When her family settled in Forbes Park, Makati, society expected her to host charity luncheons. Instead, she became a familiar face in Manila's nightlife.Arriving in couture, dancing barefoot before dawn, and leaving with memories instead of headlines.</br></p>
-
-<br><p>People often mistook her carefree nature for entitlement, but money had never been what drove her. To Sica, it simply made freedom easier. Behind her effortless smile was the quiet weight of the Montemayor name and the expectations that came with it. She ignored them not out of rebellion, but because she believed life should be lived, not carefully curated.</br></p>
-
-     <br><p> <i>"La buena vida no se hereda. Se vive."</i> The good life isn't inherited. It's lived.</br></p>
- 
-<br><p>Because designer heels wear out, champagne goes flat, and private jets always land. But the nights worth remembering almost always begin with someone saying—</p></br>
-
-      <i>"Una copa más."</i>
-
-            </div>
+<div class="post-body">
+    <video class="post-video" autoplay muted loop playsinline controls>
+        <source src="https://lilsexywaist.github.io/get_itSexy/copy_1BDE87DD-9AD9-45C8-A47D-560B9471E427.mp4" type="video/mp4">
+    </video>
+</div>
 
             <div class="comment">
-                💬 69 comments
+                💬 777 comments
             </div>
 
         </div>
@@ -376,7 +407,6 @@ Search...
             </div>
 
         </div>
-
         <div class="post">
 
             <div class="post-header">
@@ -397,16 +427,74 @@ Search...
                   <b>D</b>on't <b>I</b> <b>V</b>ex <b>A</b>nyone? (#Hit_My_Line) 
 
                 </a>
+          </div>
+  </div>
+      </div>
+        <div id="information" class="page">
 
-            </div>
+    <div class="post">
+
+        <div class="post-header">
+            WHO IS SHE?
+        </div>
+
+        <div class="post-body">
+          <u>Marta Kjorésica Montemayor</u>, known simply as <i><b>Sica</i></b>, was born into old money, raised in a grand estate in La Moraleja, Madrid, where antique clocks echoed through halls filled with priceless art, vintage cars, and generations of family history. Growing up, spent her afternoons in etiquette lessons, weekends yachting, summers in Mallorca, and winters in Gstaad.</p>
+
+<p>She preferred cigarette smoke over ballroom perfume, techno over orchestras, and nights that lasted until sunrise. While her family expected another polished socialite, Sica chased experiences instead. She knew the best clubs in Ibiza, hidden jazz bars in Paris, and cafés in Milan where midnight still felt like morning.</p>
+
+<p>When her family settled in Forbes Park, Makati, society expected her to host charity luncheons. Instead, she became a familiar face in Manila's nightlife. Arriving in couture, dancing barefoot before dawn, and leaving with memories instead of headlines.</p>
+
+<p>People often mistook her carefree nature for entitlement, but money had never been what drove her. To Sica, it simply made freedom easier. Behind her effortless smile was the quiet weight of the Montemayor name and the expectations that came with it. She ignored them not out of rebellion, but because she believed life should be lived, not carefully curated.</p>
+
+    <p> <i>"La buena vida no se hereda. Se vive."</i> The good life isn't inherited. It's lived.</p>
+ 
+<p>Because designer heels wear out, champagne goes flat, and private jets always land. But the nights worth remembering almost always begin with someone saying—</p>
+
+      <i>"Una copa más."</i>
+          
+
+        </div>
+
+        <div class="comment">
+            💬 69 comments
+        </div>
+
+    </div>
+
+</div>
+        </div>
+          </div>
+    </div>
 
 </div>
 
 </div>
 
+</div>
+<script>
+function showTab(tab){
+
+    document.getElementById("profile").style.display = "none";
+    document.getElementById("information").style.display = "none";
+
+    document.getElementById("profileTab").classList.remove("active");
+    document.getElementById("informationTab").classList.remove("active");
+
+    document.getElementById(tab).style.display = "block";
+
+    if(tab === "profile"){
+        document.getElementById("profileTab").classList.add("active");
+    }else{
+        document.getElementById("informationTab").classList.add("active");
+    }
+
+}
+</script>
 </body>
 </html>
-    
+    <script  src="./script.js"></script>
+
   </body>
   
 </html>
